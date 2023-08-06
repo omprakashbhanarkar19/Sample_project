@@ -1,22 +1,22 @@
 pipeline {
     agent any
     stages { 
-        stage ("pull") {
+        stage ("pull-stage") {
             steps {
                 sh "echo pull successfull"
             }
         }
-        stage ("build") {
+        stage ("build-stage") {
             steps {
                 sh "echo build successfull"
             }
         }
-        stage ("test") {
+        stage ("test-stage") {
             steps {
                 sh "echo test successfull"
             }
         }
-        stage ("deploy") {
+        stage ("deploy-stage") {
             steps {
                 sh "echo deploy successfull"
             }
