@@ -3,12 +3,12 @@ pipeline {
     stages { 
         stage ("tf initization") {
             steps {
-                sh 'terrform init'
+                sh 'terraform init'
             }
         }
         stage ("tf plan") {
             steps {
-                sh 'terrform plan'
+                sh 'terraform plan'
             }
         }
         stage ("tf apply") {
