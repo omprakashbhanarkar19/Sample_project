@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 jenkins_url = 'http://54.87.147.137:8080/'
 jenkins_username = 'admin'
 jenkins_password = 'admin123'
-jenkins_job_name = 'Sample-demo'
+jenkins_job_name = 'demo-project'
 
 # GitHub repository configuration
 github_repo_url = 'https://github.com/omprakashbhanarkar19/Sample_project.git'
