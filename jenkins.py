@@ -10,7 +10,7 @@ jenkins_job_name = 'Sample-project'
 # GitHub repository configuration
 github_repo_url = 'https://github.com/omprakashbhanarkar19/Sample_project.git'
 github_credentials_id = 'your-github-credentials-id'
-github_Branch = main
+
 
 # Connect to Jenkins server
 server = jenkins.Jenkins(jenkins_url, username=jenkins_username, password=jenkins_password)
@@ -47,7 +47,7 @@ job_xml = f"""
       </userRemoteConfigs>
       <branches>
         <hudson.plugins.git.BranchSpec>
-          <name>{github_Branch}</name>
+          <name>main</name>
         </hudson.plugins.git.BranchSpec>
       </branches>
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
