@@ -11,6 +11,9 @@ jenkins_job_name = 'demo-project'
 github_repo_url = 'https://github.com/omprakashbhanarkar19/Sample_project.git'
 github_credentials_id = 'your-github-credentials-id'
 
+# #create pre-configured-job
+job_xml = open("job.xml", mode='r', encoding='utf-8').read()
+server.create_job("job", job_xml)
 
 # Connect to Jenkins server
 server = jenkins.Jenkins(jenkins_url, username=jenkins_username, password=jenkins_password)
