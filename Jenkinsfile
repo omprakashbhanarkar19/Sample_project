@@ -16,10 +16,6 @@ pipeline {
                 sh "echo test successfull"
             }
         }
-        stage ("deploy-stage") {
-            steps {
-                sh "echo deploy successfull"
-            }
-        }
+       
     }
 }
