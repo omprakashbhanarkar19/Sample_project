@@ -1,19 +1,19 @@
 pipeline {
     agent any
     stages { 
-        stage ("pull-stage") {
+        stage ("tf initization") {
             steps {
-                sh "echo pull successfull"
+                sh 'terrform init'
             }
         }
-        stage ("build-stage") {
+        stage ("tf plan") {
             steps {
-                sh "echo build successfull"
+                sh 'terrform plan'
             }
         }
-        stage ("test-stage") {
+        stage ("tf apply") {
             steps {
-                sh "echo test successfull"
+                sh 'terraform apply --auto-approve'
             }
         }
        stage ("deploy-stage") {
