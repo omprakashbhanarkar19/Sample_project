@@ -1,9 +1,4 @@
 provider "http" {
-  # No configuration needed for the HTTP provider
-}
-
-
-provider "http" {
   url      = "http://52.90.131.170:8080/"
   username = "admin"
   password = "admin123"
