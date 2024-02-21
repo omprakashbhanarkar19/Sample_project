@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    jenkins = {
-      source = "hashicorp/jenkins"
-      version = "~> 2.0.0"
-    }
-  }
-  required_version = ">=1.1.0"
-}
 
 provider "jenkins" {
   url      = "http://52.90.131.170:8080/"
