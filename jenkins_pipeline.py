@@ -2,7 +2,7 @@ import jenkins
 import xml.etree.ElementTree as ET
 
 # Jenkins server configuration
-jenkins_url = 'http://54.87.147.137:8080/'
+jenkins_url = 'http://54.224.11.157:8080/'
 jenkins_username = 'admin'
 jenkins_password = 'admin123'
 jenkins_job_name = 'demo-project'
