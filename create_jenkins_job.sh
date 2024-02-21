@@ -67,6 +67,7 @@ curl -X POST -u "${jenkins_username}:${jenkins_password}" "${jenkins_url}/job/${
 # Query job information
 curl -u "${jenkins_username}:${jenkins_password}" "${jenkins_url}/job/${jenkins_job_name}/api/json"
 
+
 # Create or update Jenkins job
 #if curl --user "${jenkins_username}:${jenkins_password}" -X POST "${jenkins_url}/createItem?name=${jenkins_job_name}" -H "Content-Type:application/xml" -d "${job_xml}" -o /dev/null -w "%{http_code}" | grep -q "200"; then
 #    echo "Jenkins job ${jenkins_job_name} created or updated successfully."
