@@ -11,9 +11,9 @@ pipeline {
                 sh "echo build successfull"
             }
         }
-        stage ("deploy stage") {
+        stage ("test stage") {
             steps {
-                sh "echo deploy successfull"
+                sh "echo test successfull"
             }
         }
       
