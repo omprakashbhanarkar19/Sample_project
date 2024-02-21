@@ -1,3 +1,17 @@
+provider "http" {
+  # No configuration needed for the HTTP provider
+}
+
+  provisioner "local-exec" {
+    command = <<-EOF
+      curl -X POST \
+        -u "${var.jenkins_username}:${var.jenkins_password}" \
+        -H 'Content-Type: application/xml' \
+        -d @job.xml \
+        ${var.jenkins_url}/createItem?name=${var.jenkins_job_name}
+    EOF
+  }
+
 
 provider "jenkins" {
   url      = "http://52.90.131.170:8080/"
