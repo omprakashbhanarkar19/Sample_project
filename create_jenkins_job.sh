@@ -60,3 +60,11 @@ job_xml=$(cat <<EOF
 </flow-definition>
 EOF
 )
+
+
+# Create or update Jenkins job
+if curl --user "${jenkins_username}:${jenkins_password}" -X POST "${jenkins_url}/createItem?name=${jenkins_job_name}" -H "Content-Type:application/xml" -d "${job_xml}" -o /dev/null -w "%{http_code}" | grep -q "200"; then
+    echo "Jenkins job ${jenkins_job_name} created or updated successfully."
+else
+    echo "Failed to create or update Jenkins job."
+fi
