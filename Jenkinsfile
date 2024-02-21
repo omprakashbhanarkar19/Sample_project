@@ -13,7 +13,7 @@ pipeline {
         }
         stage ("test stage") {
             steps {
-                sh "echo test successfull"
+                sh "echo deploy successfull"
             }
         }
       
