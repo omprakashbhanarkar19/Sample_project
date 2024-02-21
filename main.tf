@@ -1,10 +1,10 @@
 terraform {
-    required_providers {
-        jenkins = {
-            source = "registry.terraform.io/hashicorp/jenkins"
-            version = "~> 2.0.0"
-        }
+  required_providers {
+    jenkins = {
+      source = "hashicorp/jenkins"
+      version = "~> 2.0.0"
     }
+  }
 }
 
 provider "jenkins" {
